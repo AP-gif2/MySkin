@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Image 1 -->
+            <ImageView
+                android:id="@+id/image_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/light_gray"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/image_placeholder" />
+
+            <!-- Image 2 -->
+            <ImageView
+                android:id="@+id/image_view_2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/light_gray"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/image_placeholder" />
+
+            <!-- Image 3 -->
+            <ImageView
+                android:id="@+id/image_view_3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/light_gray"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/image_placeholder" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_select_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_select_images"
+            android:textSize="16sp"
+            style="@style/Widget.MySkin.Button" />
+
+        <Button
+            android:id="@+id/btn_save_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_save_images"
+            android:textSize="16sp"
+            style="@style/Widget.MySkin.Button" />
+
+        <Button
+            android:id="@+id/btn_delete_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_delete_all"
+            android:textSize="16sp"
+            style="@style/Widget.MySkin.Button.Accent" />
+
+    </LinearLayout>
+
+</LinearLayout>
